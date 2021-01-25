@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile-container {
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.fav-container {
+    background-color: #f5a5ef;
+    padding: 1rem;
+    text-align: center;
+}
+
+.fav-meals {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-meals li {
+    width: 75px;
+    margin: 5px;
+}
+
+.fav-meals li img {
+    height: 70px;
+    width: 70px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fav-meals li span {
+    font-size: 0.8rem;
+}
+
+.meal {
+    margin: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #3333331a;
+}
+
+.meals {
+    position: relative;
+}
+.meals .random {
+    position: absolute;
+    padding: .25rem .5rem;
+    border-top-right-radius:3px;
+    border-bottom-right-radius: 3px;
+    background-color: white;
+    top: 10px;
+    background-color: #fff;
+}
+
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(197,188,188);
+    font-size: 1.2rem;
+}
+.meal-body .fav-btn.active{
+    color: rebeccapurple;
+}
